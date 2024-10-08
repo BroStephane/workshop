@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environnement
+.env
+
+# Logs
+logs/
+*.log
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Déploiement
+*.swp
+
+# Bases de données
+*.sqlite
+
+# IDE/Éditeur de texte
+.idea/
+.vscode/
+
+# Build
+/build
+
+# Sequelize
+config/config.json
+
+# Autres
+coverage/
