@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+
+# Environnement
+.env
+
+# Logs
+logs/
+*.log
+debug.log
+
+# Build
+build/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# IDE/Éditeur de texte
+.idea/
+.vscode/
+*.swp
+
+# Coverage
+coverage/
+
+# Service Workers
+service-worker.js
+
+# Tests
+__tests__/
+*.spec.js
+*.test.js
+jest/
+
+# Cache
+.cache/
+*.cache
+
+# Autres
+npm-debug.log*
+yarn-error.log
