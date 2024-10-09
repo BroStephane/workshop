@@ -6,6 +6,10 @@ dotenv.config();
 
 const app = express();
 
+// Assurer que PORT est défini depuis l'environnement ou avoir une valeur par défaut
+const PORT = process.env.PORT || 5000;
+
+
 // Middleware de base pour parser le JSON
 app.use(express.json());
 
