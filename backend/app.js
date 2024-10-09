@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const authRoutes = require('./routes/authRoutes');
 
 // Charger les variables d'environnement
 dotenv.config();
@@ -30,6 +31,9 @@ sequelize.authenticate()
     .catch(err => {
         console.error('Erreur de connexion à la base de données :', err);
     });
+
+// Routes
+app.use('/api/auth', authRoutes);
 
 // Démarrer le serveur
 app.listen(PORT, () => {
