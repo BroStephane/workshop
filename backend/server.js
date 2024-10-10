@@ -32,6 +32,11 @@ sequelize.authenticate()
     .catch(err => {
         console.error('Erreur de connexion à la base de données :', err);
     });
+//Routes tst
+// Créez une route GET simple qui retourne "Hello World"
+app.get('/hello', (req, res) => {
+    res.send('Hello World!');
+});
 
 // Routes
 app.use('/api/auth', authRoutes);
