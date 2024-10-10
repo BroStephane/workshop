@@ -54,7 +54,7 @@ const Accueil = () => {
                 <div className="rectangleBasDePage">
                 <nav>
                     <a href="/accueil"><FontAwesomeIcon icon={faHouse} className='footer-icon'/></a>
-                    <a href="#"><FontAwesomeIcon icon={faSquarePlus} className='footer-icon'/></a>
+                    <a href="/ajout"><FontAwesomeIcon icon={faSquarePlus} className='footer-icon'/></a>
                     <a href="#"><FontAwesomeIcon icon={faPaperPlane} className='footer-icon'/></a>
                     <a href="#"><FontAwesomeIcon icon={faUser} className='footer-icon'/></a>
                 </nav>

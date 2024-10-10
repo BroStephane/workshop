@@ -1,0 +1,109 @@
+/* Styles globaux pour le conteneur principal */
+.accueil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    background-color: #F0F1F5; /* Couleur de fond claire */
+    font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Styles pour le logo */
+.logo-container {
+    margin: 20px 0; /* Marge en haut et en bas */
+}
+
+.logo {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+/* Styles pour le conteneur des médicaments */
+.medicament-container {
+    margin-right:10px;
+    margin-left:10px;
+    background-color: white; /* Fond blanc pour le conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    padding: 20px; /* Espacement interne */
+    margin: 20px 0; /* Marge entre les éléments */
+}
+
+.rectangleMedicament {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement tous les éléments enfants */
+}
+
+/* Styles pour les titres */
+h1 {
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Styles pour les rectangles des médicaments */
+.rectangleMedicament, .rectangleDonnees {
+    margin-bottom: 20px; /* Espace entre les sections */
+}
+
+/* Styles pour les labels */
+label {
+    font-weight: bold; /* Met en gras les étiquettes */
+    display: block; /* Affiche chaque label sur une nouvelle ligne */
+    margin-bottom: 5px; /* Espace sous chaque label */
+}
+
+/* Styles pour les sélecteurs */
+.medicament-select, .donnees-select {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les éléments */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+}
+
+/* Styles pour les boutons */
+button {
+    padding: 10px 20px; /* Espacement interne pour le bouton */
+    background-color: #FF0000; /* Couleur de fond (bleu) */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 25px; /* Bords arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+    width: 104px;
+    height: 33.8px;
+    margin-top:10px;
+    opacity : 0.9;
+}
+
+button:hover {
+    background-color: #e63939; /* Couleur au survol (bleu plus foncé) */
+}
+
+/* Styles pour le footer */
+.accueil-footer {
+    margin-top: auto; /* Pousse le footer vers le bas */
+    width: 100%; /* Prend toute la largeur */
+    background-color: white; /* Fond blanc */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    padding: 10px 0; /* Espacement interne */
+}
+
+.rectangleBasDePage {
+    display: flex; /* Utilise Flexbox pour l'alignement des icônes */
+    justify-content: space-around; /* Espace égal autour des icônes */
+}
+
+/* Styles pour les icônes dans le footer */
+.footer-icon {
+    color: #007BFF; /* Couleur des icônes */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.footer-icon:hover {
+    color: #0056b3; /* Couleur des icônes au survol */
+}
