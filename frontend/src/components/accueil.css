@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F1F5;
+}
+
+.accueil-container {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+.logo-container {
+  margin-bottom: 0;
+}
+.accueil-header {
+  font-size: 32px;
+  display:flex;
+  justify-content: left;
+  margin-left:60px;
+}
+.graphique-container {
+  border-radius: 10px;
+  width:100%;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+}
+.rectangleGraphique{
+  background-color: white;
+  width:330px;
+  height: 225px;
+  border-radius:10px;
+}
+.titreGraphique{
+  font-size: 20px;
+}
+.titleCheckList{
+  font-size: 20px;
+  display:flex;
+  justify-content: left;
+  margin-left:-200px;
+}
+.medications-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.rectangle1, .rectangle2, .rectangle3 {
+  background-color: white;
+  width: 330px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex; /* Utiliser Flexbox */
+  align-items: center; /* Centre verticalement tous les éléments */
+  margin-bottom: 10px;
+  position: relative; /* Pour positionner les éléments à l'intérieur */
+}
+
+.checkBox1,.checkBox2, .checkBox3 {
+  margin-right: 10px; /* Espace à droite de la case à cocher */
+  cursor: pointer; /* Curseur pointeur */
+  margin-left: 10px;
+}
+
+/* Centrer le label */
+.checkBoxLabel {
+  flex-grow: 1; /* Prendre tout l'espace restant */
+  position: relative; /* Position relative pour le label */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 11px; /* Taille de police */
+  display: flex; /* Utiliser Flexbox pour centrer */
+  align-items: center; /* Centrer verticalement le contenu */
+  justify-content: center; /* Centrer horizontalement le contenu */
+}
+
+
+
+/* Afficher la croix rouge lorsque la case est cochée */
+.checkBox1:checked + .checkBoxLabel .checkmarkIcon {
+  display: inline; /* Afficher l'icône lorsque cochée */
+}
+
+
+
+/* Reste blanc lorsque coché */
+.checkBox1:checked + .checkBoxLabel::before {
+  background-color: rgba(255, 0, 0, 0.5); /* Fond rouge lorsque coché */
+  border: 2px solid #FF0000; /* Bord rouge */
+}
+
+/* Alignement de l'heure à droite */
+.time1, .time2, .time3 {
+  margin-right: 10px; /* Pousse l'élément à droite */
+  font-size: 10px; /* Taille de police pour l'heure */
+}
+.footer-icon {
+  color: black; /* Changez la couleur ici si nécessaire */
+}
+
+nav {
+  position: fixed;               /* Fixe la barre en bas de l'écran */
+  bottom: 0;                 /* Décale la barre de 10px du bas */
+  left: 0;                       /* Aligne la barre à gauche */
+  right: 0;                      /* Aligne la barre à droite */
+  background-color: white;      /* Couleur de fond de la barre de navigation */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+  display: flex;                /* Utilise Flexbox pour l'alignement des icônes */
+  justify-content: space-around; /* Espace égal autour des icônes */
+  padding: 10px 0;              /* Espacement vertical */
+  z-index: 1000;                /* Assure que la barre reste au-dessus des autres éléments */
+  border-top: 1px solid #FF0000; /* Bordure supérieure rouge */
+  border-bottom: 10px solid white;
+}
+
+
