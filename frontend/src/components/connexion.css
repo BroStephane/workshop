@@ -1,0 +1,100 @@
+.connexion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hauteur complète de l'écran */
+    background-color: #F0F1F5; /* Couleur de fond claire */
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.rectangle {
+    width: 345px; /* Largeur du rectangle */
+    height: 180px; /* Hauteur du rectangle */
+    background-color: white; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis (facultatif) */
+    display: flex; /* Pour centrer le contenu */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    margin: 20px auto; /* Ajoute une marge pour centrer le rectangle */
+}
+
+.connexion-formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email{
+    width:310px;
+    height: 28px;
+    padding: 10px;
+    margin-bottom: 10px; /* Espace entre les champs */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */ 
+}
+
+.motDePasse{
+    height: 28px;
+    width:310px;
+    padding: 10px;
+    margin-bottom: 10px; /* Espace entre les champs */
+    border: 1px solid #ccc; /* Bordure gris clair */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */ 
+}
+
+input::placeholder {
+    color: #aaa; /* Couleur du texte de l'espace réservé */
+}
+
+.connexionBouton {
+    padding: 10px;
+    background-color: #FF0000; /* Couleur rouge pour le bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+    cursor: pointer; /* Pointeur pour le curseur */
+    width: 104px;
+    height: 33.8;
+    border-radius: 25px;
+    opacity: 0.5;
+    
+}
+
+.connexionBouton:hover {
+    background-color: #e63939; /* Couleur plus foncée au survol */
+}
+
+.inscriptionBouton {
+    margin-top: 10px; /* Espacement entre le formulaire et le bouton */
+    padding: 10px 20px; /* Espacement interne pour le bouton */
+    background-color: #FF0000; /* Couleur de fond (bleu) */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+    display: block; /* Définit le bouton comme un bloc pour centrer */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+    opacity:0.9;
+}
+
+.inscriptionBouton:hover {
+    background-color: #e63939; /* Couleur au survol (bleu plus foncé) */
+}
