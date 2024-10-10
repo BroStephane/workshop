@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "adminEPSI",
+        "password": "adminEPSI1",
+        "database": "myhealthsync",
+        "host": "hs432613-001.eu.clouddb.ovh.net",
+        "port": 35660,
+        "dialect": "mysql"
+    },
+    "test": {
+    "username": "adminEPSI",
+    "password": "adminEPSI1",
+    "database": "myhealthsync",
+    "host": "hs432613-001.eu.clouddb.ovh.net",
+    "port": 35660,
+    "dialect": "mysql"
+    },
+    "production": {
+    "username": "adminEPSI",
+    "password": "adminEPSI1",
+    "database": "myhealthsync",
+    "host": "hs432613-001.eu.clouddb.ovh.net",
+    "port": 35660,
+    "dialect": "mysql"
+    }
+}
