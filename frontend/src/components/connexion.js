@@ -6,18 +6,18 @@ const Connexion = () => {
     return (
         <div className="connexion-container">
             <div className="logo-container">
-            <img src={logo} alt="MyHealthSync Logo" className="logo" />
+                <img src={logo} alt="MyHealthSync Logo" className="logo" />
             </div>
-            <h1>Bonjour !</h1> 
-        <div className="rectangle">
-            <form className="connexion-formulaire">
-                <input class="email" placeholder="Mail" required />
-                <input class="motDePasse" placeholder="Mot de passe" required />
-                <button class="Valide" className="connexionBouton">Valider</button>
-            </form>
+            <h1>Bonjour !</h1>
+            <div className="rectangle">
+                <form className="connexion-formulaire">
+                    <input className="email" placeholder="Mail" required />
+                    <input className="motDePasse" placeholder="Mot de passe" required />
+                    <button type="submit" className="connexionBouton">Valider</button>
+                </form>
+            </div>
+            <a href="/inscription"><button className="inscriptionBouton">S'inscrire</button></a> 
         </div>
-        </div>
-        
     );
 }
 
