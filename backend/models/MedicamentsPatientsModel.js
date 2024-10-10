@@ -1,24 +1,30 @@
+// Fichier: models/MedicamentsPatientsModel.js
+
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/connection');
-const PatientsModel = require('./PatientsModel');
-const MedicamentsModel = require('./MedicamentsModel');
 
 const MedicamentsPatientsModel = sequelize.define('Medicaments_Patients', {
     id_patients: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
-            model: PatientsModel,
+            model: 'Patients',
             key: 'id_patients',
         },
-        primaryKey: true,
+        primaryKey: true, // Définir comme clé primaire
     },
     id_medicaments: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
-            model: MedicamentsModel,
+            model: 'Medicaments',
             key: 'id_medicaments',
         },
-        primaryKey: true,
+        primaryKey: true, // Définir comme clé primaire
+    },
+    horaire: {
+        type: DataTypes.DATE,
+        allowNull: true,
     },
 }, {
     timestamps: false,

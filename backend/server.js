@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
 const saisieRoutes = require('./routes/saisieRoutes');
+const medicamentsRoutes = require('./routes/medicamentsRoutes');
 
 // Charger les variables d'environnement
 dotenv.config();
@@ -41,6 +42,7 @@ app.get('/hello', (req, res) => {
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/saisie', saisieRoutes);
+app.use('/api/medicaments', medicamentsRoutes);
 
 // Démarrer le serveur
 app.listen(PORT, () => {
